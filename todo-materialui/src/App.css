@@ -1,0 +1,55 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.App{
+    height:80vh;
+    width:30vw;
+    margin: 5% auto;
+}
+
+h1{
+    background-color: darkorchid;
+    color:white;
+    text-align: center;
+    margin-top: 6%;
+}
+
+input {
+    background-color:white;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: blue;
+    margin:0% 10% 0% 10%;
+    height: 6vh;
+    text-align: center;
+    font-size: large;
+}
+
+input:focus {
+border-color: green
+}
+
+button:hover{
+    background-color: green;
+}
+
+ol{
+    margin: 10% 0% 0% 15%;
+    list-style-type: none;
+}
+
+li{
+    font-weight: bold;
+    color:darkorchid;
+    font-size: large;
+    background-color: white;    
+    text-transform: uppercase;
+    display: inline;
+}
+
+.list{
+    background-color: white;
+    padding-bottom: 5%;
+}
