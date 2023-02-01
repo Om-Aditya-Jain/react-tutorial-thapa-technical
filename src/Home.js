@@ -1,8 +1,20 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState } from 'react';
+import Image from './image.jsx';
 const Home = () =>{
-    const {name} = useParams();
-    return <h1>Welcome {name} to Home Page</h1>;
+    const [img,setimg] = useState("");
+    const getimage = (event) =>{
+        setimg(event.target.value);
+    }
+    return (
+    <>
+    <div className="container" style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column"}}>
+        <h1>Welcome to Home Page</h1>
+        <input type="text" onChange={getimage} value={img}/>
+        <br />
+        {img==="" ? null : <Image name={img}/>}
+    </div>
+    </>
+    );
 }
 
 export default Home;
